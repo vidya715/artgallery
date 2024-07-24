@@ -1,0 +1,118 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Gallery Website</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+  <div class="logo">
+    <h1>Art Gallery</h1>
+  </div>
+  <div class="menu">
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+</div>
+
+<div class="content">
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="row">
+        <div class="column">
+          <img src="file:///D:/Downloads/main-image-25756024317466223800%202.jpg" onclick="openModal('Modal1');" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="file:///D:/Downloads/main-image-18015960499991743423.jpg" onclick="openModal('Modal2');" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="file:///D:/Downloads/graffiti-569265_960_7201722339907715097303.jpg" onclick="openModal('Modal3');" class="hover-shadow cursor">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <p>Welcome to Art Gallery, where we showcase the finest artworks from around the world. Our mission is to promote artistic expression and appreciation.</p>
+      <p>Explore our collection of paintings and murals that reflect diverse cultures and historical periods.</p>
+      <p>Join us in celebrating the beauty and creativity of art!</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form-container">
+      <form id="contact-form" action="#">
+        <div class="form-group">
+          <label for="username">Name:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+<div id="Modal1" class="modal">
+  <span onclick="closeModal('Modal1');" class="close">&times;</span>
+  <img class="modal-content" src="file:///D:/Downloads/main-image-25756024317466223800%202.jpg">
+  <div class="caption">
+    <h3>Marie Pauline Laurent (1826-1890)</h3>
+    <p>Marie Pauline Laurent was a French artist known for her portraits and genre paintings. One of her notable works is the portrait of Empress Eugénie, created circa 1855.</p>
+    <p><strong>Empress Eugénie:</strong></p>
+    <p>Empress Eugénie, full name Eugénie de Montijo, was the wife of Napoleon III, Emperor of the French from 1853 to 1870.</p>
+    <p>Born María Eugenia Ignacia Agustina de Palafox y KirkPatrick on May 5, 1826, in Granada, Spain, she became Empress of the French upon her marriage to Napoleon III in 1853.</p>
+    <p>Empress Eugénie was known for her influence on fashion and culture during the Second French Empire. She played a significant role in promoting French luxury industries and was a prominent figure in European high society.</p>
+    <p>Marie Pauline Laurent's portrait of Empress Eugénie likely captures her elegance and influence during this period, reflecting both the fashion and societal norms of mid-19th-century France.</p>
+    <p>Marie Pauline Laurent's painting of Empress Eugénie serves as a historical artifact, depicting a pivotal figure in European history and highlighting the artistic style of the mid-19th century.</p>
+  </div>
+</div>
+
+<div id="Modal2" class="modal">
+  <span onclick="closeModal('Modal2');" class="close">&times;</span>
+  <img class="modal-content" src="file:///D:/Downloads/main-image-18015960499991743423.jpg">
+  <div class="caption">
+    <h3>Virgin and Child with a Donor Presented by Saint Jerome</h3>
+    <p>"Virgin and Child with a Donor Presented by Saint Jerome" is a painting from around 1450, likely created by artists influenced by the Flemish school. It features:</p>
+    <ul>
+      <li>The Virgin Mary holding the infant Jesus.</li>
+      <li>A donor, typically a patron or noble figure, kneeling in reverence.</li>
+      <li>Saint Jerome, symbolizing wisdom and piety, presenting or blessing the scene.</li>
+    </ul>
+    <p>This artwork reflects late Medieval/early Renaissance styles, emphasizing religious devotion and artistic skill through meticulous detail and symbolic depth. It served as a focal point for private or public worship, contributing to the cultural and spiritual landscape of its time.</p>
+  </div>
+</div>
+
+<div id="Modal3" class="modal">
+  <span onclick="closeModal('Modal3');" class="close">&times;</span>
+  <img class="modal-content" src="file:///D:/Downloads/graffiti-569265_960_7201722339907715097303.jpg">
+  <div class="caption">
+    <h3>Graffiti</h3>
+    <p>Graffiti is often seen as a distinct style within the broader category of mural painting. While traditional mural painting tends to involve large-scale artworks often commissioned for public spaces, graffiti typically refers to more spontaneous and often unauthorized art created with spray paint or markers on surfaces like walls, buildings, or public infrastructure.</p>
+    <p>What sets graffiti apart is its association with urban environments, its often rebellious or political messages, and its roots in underground culture. While some graffiti artists may transition to creating commissioned murals, the term "graffiti" itself tends to connote a raw, unfiltered form of expression that contrasts with more conventional mural styles.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
